@@ -1,8 +1,7 @@
 {% set name = "cling" %}
-{% set version = "0.3.post" %}
-{% set commit = "efd446871cfb077189bf3df7fbbad58de51ff7fa" %}
-{% set sha256 = "b1c3eed7614c14e2bd092c3c237527eacaf0445358b5c236bb4fa73bbd1a4bb0" %}
-{% set build_number = "3" %}
+{% set version = "v0.4" %}
+{% set sha256 = "67b181309c5fe712dcd00903d48fb6965c46d517847d0b7f506a1921ba2f56b6" %}
+{% set build_number = "0" %}
 {% set llvm_version = "3.9.1" %}
 
 package:
@@ -11,7 +10,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/root-mirror/cling/archive/{{ commit }}.tar.gz
+  url: https://github.com/root-project/cling/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - 0001-conda-patch.patch 
